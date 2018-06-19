@@ -1,0 +1,52 @@
+﻿@model BettyGram.Models.WheaterViewModel.OpenWeatherMap
+<link href="~/Content/table.css" rel="stylesheet" />
+<div id="apiDiv">
+
+</div>
+
+<div class="container-elements">
+    <div id="div1">
+
+    </div>
+    <div>
+        <div class="firstTable two" id="message">
+            @(new HtmlString(Model.ApiResponse))
+
+        </div>
+        <img class="firstImage one" src="~/Content/Images/sun.png" />
+    </div>
+
+    <div id="div3">
+    </div>
+
+    <div class="second-container">
+        <div class="secondTable two" id="message">
+            @(new HtmlString(Model.ApiResponse))
+
+        </div>
+        <img class="firstImage one" src="~/Content/Images/sun.png" />
+    </div>
+    <div id="div5">
+        <img id="mic" class="weather-mic" src="/Content/mic.png" width="100" alt="mic"/>
+    </div>
+
+    <div class="third-container">
+        <div class="thirdTable two" id="message">
+            @(new HtmlString(Model.ApiResponse))
+
+        </div>
+        <img class="firstImage one" src="~/Content/Images/sun.png" />
+    </div>
+    <div id="div7">
+    </div>
+
+    <div class="fourth-container">
+        <div class="fourthTable two" id="message">
+            @(new HtmlString(Model.ApiResponse))
+
+        </div>
+        <img class="fourthImage one" src="~/Content/Images/sun.png" />
+    </div>
+    <div id="div9">
+    </div>
+</div>

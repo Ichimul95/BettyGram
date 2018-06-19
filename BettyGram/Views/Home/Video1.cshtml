@@ -1,0 +1,105 @@
+﻿<link href="~/Content/Video.css" rel="stylesheet" />
+
+<div class="container-elements">
+ 
+   <div id="div1">
+
+   </div>
+   <div id="div2">
+      @*<canvas id="canvas1" height="320" width="400"></canvas>*@
+      <video width="420" height="250" id="video1" src="~/Content/Video/test.mp4"></video>
+   </div>
+
+   <div id="div3">
+   </div>
+
+   <div id="div4">
+      @*<canvas id="canvas2" height="320" width="400"  ></canvas>*@
+      <video width="420" height="420" id="video2" src="~/Content/Video/test.mp4"></video>
+   </div>
+
+   <div id="div5">
+   </div>
+
+   <div id="div6">
+       @*<canvas id="canvas3" height="320" width="400" ></canvas>*@
+      <video width="420" height="420" id="video3" src="~/Content/Video/test.mp4"></video>
+   </div>
+
+   <div id="div7">
+   </div>
+
+   <div id="div8">
+      @*<canvas id="canvas4" height="320" width="400"></canvas>*@
+      <video width="420" height="250" id="video4" src="~/Content/Video/test.mp4"></video>
+   </div>
+
+   <div id="div9">
+   </div>
+</div>
+<script>
+   $(function () {
+      $("#video1").get(0).play();
+      $("#video2").get(0).play();
+      $("#video3").get(0).play();
+      $("#video4").get(0).play();
+
+   });
+
+   //$(function () {
+   //   var canvas1 = document.getElementById('canvas1');
+   //   var canvas2 = document.getElementById('canvas2');
+   //   var canvas3 = document.getElementById('canvas3');
+   //   var canvas4 = document.getElementById('canvas4');
+   //   var ctx1 = canvas1.getContext('2d');
+   //   var ctx2 = canvas2.getContext('2d');
+   //   var ctx3 = canvas3.getContext('2d');
+   //   var ctx4 = canvas4.getContext('2d');
+   //   var video1 = document.getElementById('video1');
+   //   var video2 = document.getElementById('video2');
+   //   var video3 = document.getElementById('video3');
+   //   var video4 = document.getElementById('video4');
+
+   //   video1.addEventListener('play', function () {
+   //      var $this = this; //cache
+   //      (function loop() {
+   //         if (!$this.paused && !$this.ended) {
+   //            ctx1.drawImage($this, 0, 0);
+   //            setTimeout(loop, 1000 / 30); // drawing at 30fps
+   //         }
+   //      })();
+   //   }, 0);
+   //   video2.addEventListener('play', function () {
+   //       var $this = this; //cache
+   //       (function loop() {
+   //           if (!$this.paused && !$this.ended) {
+   //               ctx2.drawImage($this, 0, 0);
+   //               setTimeout(loop, 1000 / 30); // drawing at 30fps
+   //           }
+   //       })();
+   //   }, 0);
+   //   video3.addEventListener("play", function () {
+   //       var $this = this; //cache
+   //       (function loop() {
+   //           if (!$this.paused && !$this.ended) {
+   //               ctx3.drawImage($this, 0, 0);
+   //               setTimeout(loop, 1000 / 30); // drawing at 30fps
+   //           }
+   //       })();
+   //   }, 0);
+   //   video4.addEventListener("play", function () {
+   //       var $this = this; //cache
+   //       (function loop() {
+   //           if (!$this.paused && !$this.ended) {
+   //               ctx4.drawImage($this, 0, 0);
+   //               setTimeout(loop, 1000 / 30); // drawing at 30fps
+   //           }
+   //       })();
+   //   }, 0);
+   //   $("#video1").get(0).play();
+   //   $("#video2").get(0).play();
+   //   $("#video3").get(0).play();
+   //   $("#video4").get(0).play();
+   //});
+
+</script>

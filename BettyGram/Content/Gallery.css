@@ -1,0 +1,232 @@
+﻿html, body {
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000000;
+}
+
+.container-elements {
+   padding-left: 60px;
+   padding-right: 60px;
+   width: 1200px;
+   height: 720px;
+   background: #000000;
+}
+
+div {
+   width: 33.33%;
+   height: 33.33%;
+   float: left;
+}
+
+#div1 {
+   background: #000000;
+   display: block;
+}
+
+#div2 {
+   background: #000000;
+   display: block;
+}
+
+#div3 {
+   background: #000000;
+   display: block;
+}
+
+#div4 {
+   background: #000000;
+   display: block;
+   transform: rotate(270deg);
+}
+
+#div5 {
+   background: #000000;
+   display: block;
+}
+
+#div6 {
+   background: #000000;
+   display: block;
+   transform: rotate(90deg);
+}
+
+#div7 {
+   background: #000000;
+   display: block;
+}
+
+#div8 {
+   background: #000000;
+   display: block;
+   transform: rotate(180deg);
+}
+
+#div9 {
+   background: #000000;
+   display: block;
+}
+
+#stage1, #stage2, #stage3, #stage4 {
+   margin: 2em auto 1em 15em;
+   height: 240px;
+   -webkit-perspective: 1200px;
+   -webkit-perspective-origin: 0 90px;
+   -moz-perspective: 1200px;
+   -moz-perspective-origin: 0 90px;
+   -ms-perspective: 1200px;
+   -ms-perspective-origin: 0 90px;
+}
+
+#rotator1 a, #rotator2 a, #rotator3 a, #rotator4 a {
+   position: absolute;
+   left: -151px;
+   -moz-transform-style: preserve-3d;
+}
+
+   #rotator1 a img, #rotator2 a img, #rotator3 a img, #rotator4 a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+   }
+
+   #rotator1 a:nth-of-type(1) img, #rotator2 a:nth-of-type(1) img, #rotator3 a:nth-of-type(1) img, #rotator4 a:nth-of-type(1) img {
+      -webkit-transform: rotateX(-90deg) translateZ(100px);
+      -moz-transform: rotateX(-90deg) translateZ(100px);
+      -ms-transform: rotateX(-90deg) translateZ(100px);
+   }
+
+   #rotator1 a:nth-of-type(2) img, #rotator2 a:nth-of-type(2) img, #rotator3 a:nth-of-type(2) img, #rotator4 a:nth-of-type(2) img {
+      -webkit-transform: translateZ(100px);
+      -moz-transform: translateZ(100px);
+      -ms-transform: translateZ(100px);
+   }
+
+   #rotator1 a:nth-of-type(3) img, #rotator2 a:nth-of-type(3) img, #rotator3 a:nth-of-type(3) img, #rotator4 a:nth-of-type(3) img {
+      -webkit-transform: rotateX(90deg) translateZ(100px);
+      -moz-transform: rotateX(90deg) translateZ(100px);
+      -ms-transform: rotateX(90deg) translateZ(100px);
+   }
+
+   #rotator1 a:nth-of-type(n+4), #rotator2 a:nth-of-type(n+4), #rotator3 a:nth-of-type(n+4), #rotator4 a:nth-of-type(n+4) {
+      display: none;
+   }
+
+@-webkit-keyframes rotator1 {
+   from {
+      -webkit-transform: rotateX(0deg);
+   }
+
+   to {
+      -webkit-transform: rotateX(90deg);
+   }
+}
+
+@-webkit-keyframes rotator2 {
+   from {
+      -webkit-transform: rotateX(0deg);
+   }
+
+   to {
+      -webkit-transform: rotateX(90deg);
+   }
+}
+
+@-webkit-keyframes rotator3 {
+   from {
+      -webkit-transform: rotateX(0deg);
+   }
+
+   to {
+      -webkit-transform: rotateX(90deg);
+   }
+}
+
+@-webkit-keyframes rotator4 {
+   from {
+      -webkit-transform: rotateX(0deg);
+   }
+
+   to {
+      -webkit-transform: rotateX(90deg);
+   }
+}
+
+@-moz-keyframes rotator1 {
+   from {
+      -moz-transform: rotateX(0deg);
+   }
+
+   to {
+      -moz-transform: rotateX(90deg);
+   }
+}
+
+@-moz-keyframes rotator2 {
+   from {
+      -moz-transform: rotateX(0deg);
+   }
+
+   to {
+      -moz-transform: rotateX(90deg);
+   }
+}
+
+@-moz-keyframes rotator3 {
+   from {
+      -moz-transform: rotateX(0deg);
+   }
+
+   to {
+      -moz-transform: rotateX(90deg);
+   }
+}
+
+@-moz-keyframes rotator4 {
+   from {
+      -moz-transform: rotateX(0deg);
+   }
+
+   to {
+      -moz-transform: rotateX(90deg);
+   }
+}
+
+
+@-ms-keyframes rotator1 {
+   from {
+      -ms-transform: rotateX(0deg);
+   }
+
+   to {
+      -ms-transform: rotateX(90deg);
+   }
+}
+
+#rotator1, #rotator2, #rotator3, #rotator4 {
+   -webkit-transform-origin: 0 101px;
+   -webkit-transform-style: preserve-3d;
+   -webkit-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 1s;
+   -moz-transform-origin: 0 100px;
+   -moz-transform-style: preserve-3d;
+   -moz-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
+   -moz-animation-duration: 2s;
+   -moz-animation-delay: 1s;
+   -ms-transform-origin: 0 101px;
+   -ms-transform-style: preserve-3d;
+   -ms-animation-timing-function: cubic-bezier(1, 0.2, 0.2, 1);
+   -ms-animation-duration: 2s;
+   -ms-animation-delay: 1s;
+}
+
+   #rotator1:hover, #rotator2:hover, #rotator3:hover, #rotator4:hover {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -ms-animation-play-state: paused;
+   }

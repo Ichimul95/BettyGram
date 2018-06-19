@@ -1,0 +1,100 @@
+﻿body,
+html {
+     height: 100%;
+    background: #000000;
+}
+
+.fullwidth {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#row1 {
+    margin-top: 20px;
+}
+
+#row1, #row2, #row3 {
+    text-align: center;
+    flex:1;
+}
+
+#video2, #placeholder2 {
+    /*margin-right: 200px;*/
+}
+
+#video3, #placeholder3 {
+    /*margin-left: 200px;*/
+}
+
+#video1, #placeholder1, #placeholder1.weather {
+    transform: rotateX(0)
+}
+
+    #video2, #placeholder2, #placeholder2.weather {
+        transform: rotate(-90deg)
+    }
+
+    #video3, #placeholder3, #placeholder3.weather {
+        transform: rotate(90deg)
+    }
+
+    #video4, #placeholder4, #placeholder4.weather {
+        transform: rotateX(180deg)
+    }
+
+#mic {
+    margin-bottom: 100px;
+    border-radius: 50%;
+}
+
+#placeholder1, #placeholder2, #placeholder3, #placeholder4 {
+    margin: auto;
+}
+
+#placeholder2 {
+    float: left;
+}
+
+#placeholder3 {
+    float: right;
+}
+
+#placeholder1 {
+    color: #fff;
+}
+#placeholder2 {
+    color: #fff;
+}
+#placeholder3 {
+    color: #fff;
+}
+#placeholder4 {
+    color: #fff;
+}
+
+.weather {
+    
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+.weather strong {
+    font-size: 16px;
+}
+
+.weather {
+    transform: rotateX(180deg);
+}
+
+#placeholder2.weather {
+    transform: rotate(-90deg)
+}
+
+#placeholder3.weather {
+    transform: rotate(90deg)
+}
+
+#video1, #video2, #video3, #video4 {
+    /*border: 1px solid #fff;*/
+}

@@ -1,0 +1,122 @@
+﻿html, body {
+    background: #0a0a0a;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container-elements {
+    background: #0a0a0a;
+    padding-right: 100px;
+    height: 720px;
+}
+table tr {
+    font-size: 14px;
+    color: white;
+    font-family: cursive;
+}
+div {
+    background: #0a0a0a;
+    width: 33.33%;
+    height: 33.33%;
+    float: left;
+}
+
+#div1 {
+    background: #0a0a0a;
+    display: block;
+    height: 300px !important;
+}
+
+.firstTable {
+    position: relative;
+    left: 60px;
+    display: block;
+    height: 210px !important;
+}
+
+#div3 {
+    background: #0a0a0a;
+    display: block;
+    height: 300px !important;
+}
+
+.secondTable {
+    position: relative;
+    left: 60px;
+    display: block;
+    height: 210px !important;
+}
+
+#div5 {
+    background: #0a0a0a;
+    display: block;
+    height: 300px !important;
+    margin-top: 40px !important;
+}
+
+.thirdTable {
+    position: relative;
+    left: 60px;
+    display: block;
+    height: 210px !important;
+}
+
+#div7 {
+    background: #0a0a0a;
+    display: block;
+    height: 300px !important;
+}
+.second-container {
+    position: relative;
+    right: 150px;
+    top: 50px;
+}
+
+.third-container {
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+.fourth-container {
+    
+    position: relative;
+    top: 125px;
+}
+.fourthTable {
+    position: relative;
+    left: 60px;
+    display: block;
+    height: 210px !important;
+    position: relative;
+    left: 128%;
+    bottom: 100%;
+}
+.firstImage {
+    position: relative;
+}
+
+
+.fourthImage {
+    position: relative;
+    left: 100%;
+    bottom: 100%;
+}
+
+#div9 {
+    background: #0a0a0a;
+    display: block;
+    height: 300px !important;
+}
+.weather-mic {
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+iframe {
+   border: 0;
+}
+video{display:none;}body {
+}

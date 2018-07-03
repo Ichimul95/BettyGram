@@ -26,20 +26,50 @@ html {
 #video3, #placeholder3 {
     /*margin-left: 200px;*/
 }
+.canvas1 {
+    width: 480px !important;
+    height: 290px !important;
+    transform: rotateX(180deg)
+}
+.canvas2 {
+    width: 480px !important;
+    height: 290px !important;
+    transform: rotate(90deg);
+    position: relative;
+    top: 95px;
+    float: left;
+    right: 400px;
+}
+.canvas3 {
 
-#video1, #placeholder1, #placeholder1.weather {
+    width: 480px !important;
+    height: 290px !important;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 95px;
+    float: right;
+    left: 400px;
+}
+.canvas4 {
+    width: 480px !important;
+    height: 290px !important;
+    transform: rotateX(0);
+    position: relative;
+    bottom: 175px;
+}
+#video1, #placeholder1{
     transform: rotateX(0)
 }
 
-    #video2, #placeholder2, #placeholder2.weather {
-        transform: rotate(-90deg)
-    }
-
-    #video3, #placeholder3, #placeholder3.weather {
+    #video2, #placeholder2{
         transform: rotate(90deg)
     }
 
-    #video4, #placeholder4, #placeholder4.weather {
+    #video3, #placeholder3 {
+        transform: rotate(-90deg)
+    }
+
+    #video4, #placeholder4 {
         transform: rotateX(180deg)
     }
 
@@ -53,11 +83,11 @@ html {
 }
 
 #placeholder2 {
-    float: left;
+    float: left !important;
 }
 
 #placeholder3 {
-    float: right;
+    float: right !important;
 }
 
 #placeholder1 {
@@ -74,7 +104,11 @@ html {
 }
 
 .weather {
-    
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
     font-family: "Segoe UI";
     font-size: 12px;
 }
@@ -83,18 +117,44 @@ html {
     font-size: 16px;
 }
 
-.weather {
+/*.weather {
     transform: rotateX(180deg);
 }
 
 #placeholder2.weather {
+    transform: rotate(0)
+}
+
+#placeholder3.weather {
+    transform: rotate(0)
+}*/
+
+ #placeholder1 .weather{
+    transform: rotateX(180deg)
+}
+
+
+ #placeholder2.weather {
     transform: rotate(-90deg)
 }
 
 #placeholder3.weather {
     transform: rotate(90deg)
 }
+ #placeholder4.weather {
+    transform: rotateX(0)
+}
+
 
 #video1, #video2, #video3, #video4 {
     /*border: 1px solid #fff;*/
+}
+.canvas-margin{
+    margin-top:-150px;
+}
+.video-2{
+    float:right;
+}
+.video-3 {
+    float: left;
 }

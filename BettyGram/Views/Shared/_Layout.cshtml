@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betty Gram</title>
     @Scripts.Render("~/bundles/modernizr")
-   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 </head>
 <body>
-  
- 
-        @RenderBody()
-       
-   
+    @RenderBody()
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+

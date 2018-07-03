@@ -66,24 +66,38 @@
     }
 
     function demo() {
+        $(".fullwidth").removeClass("canvas-margin")
+        $(".canvas1").hide(500);
+        $(".canvas2").hide(500);
+        $(".canvas3").hide(500);
+        $(".canvas4").hide(500);
+
         window.setTimeout(function () {
             changeVideoAndPlay("hologramExemple.mp4");
         }, 2500);
     }
 
     function gallery() {
+        $(".fullwidth").removeClass("canvas-margin")
+        $(".canvas1").hide(500);
+        $(".canvas2").hide(500);
+        $(".canvas3").hide(500);
+        $(".canvas4").hide(500);
+
         window.setTimeout(function () {
             changeVideoAndPlay("ColajEchipe.mp4");
         }, 2500);
     }
 
-    function company() {
-        window.setTimeout(function () {
-            changeVideoAndPlay("AllValuesFinal.mp4");
-        }, 2500);
-    }
+
 
     function intro() {
+        $(".fullwidth").removeClass("canvas-margin")
+        $(".canvas1").hide(500);
+        $(".canvas2").hide(500);
+        $(".canvas3").hide(500);
+        $(".canvas4").hide(500);
+
         $("#video1").get(0).play();
         $("#video2").get(0).play();
         $("#video3").get(0).play();
@@ -91,6 +105,12 @@
     }
 
     function menu() {
+        $(".fullwidth").removeClass("canvas-margin")
+        $(".canvas1").hide(500);
+        $(".canvas2").hide(500);
+        $(".canvas3").hide(500);
+        $(".canvas4").hide(500);
+
         $("#video1").attr("src", "/Content/Video/ActualOptionsFinal.mp4");
         $("#video2").attr("src", "/Content/Video/ActualOptionsFinal.mp4");
         $("#video3").attr("src", "/Content/Video/ActualOptionsFinal.mp4");
@@ -118,6 +138,7 @@
     }
 
     function presentation() {
+        $(".fullwidth").removeClass("canvas-margin")
         $("#video1").attr("src", "/Content/Video/hi_2.mp4");
         $("#video2").attr("src", "/Content/Video/hi_2.mp4");
         $("#video3").attr("src", "/Content/Video/hi_2.mp4");
@@ -146,7 +167,146 @@
         speak( "Nice to meet you. Here is what I can do for you: I can tell you the weather, nice images from Stabiplan, tell you the company values and even make a calculation in Stabicad" );
     }
 
+    function company() {
+        $(".weather").hide();
+        $(".fullwidth").addClass("canvas-margin")
+        $(".canvas1").show(500);
+        $(".canvas2").show(500);
+        $(".canvas3").show(500);
+        $(".canvas4").show(500);
+
+        mic.attr("style", "margin-bottom: 0; margin-top: 100px");
+        pauseVideo();
+
+        $("#video1").hide(500);
+        $("#video2").hide(500);
+        $("#video3").hide(500);
+        $("#video4").hide(500);
+
+        var ctx = document.getElementById("myChart");
+        var myChart1 = new Chart("myChart-1", {
+            type: 'bar',
+            data: {
+                labels: ["October", "November", "December", "January", "February", "March"],
+                datasets: [{
+                    data: [12, 19, 5, 56, 20, 7],
+                    backgroundColor: [
+                        'rgb(255, 77, 255)',
+                        'rgb(0, 204, 0)',
+                        'rgb(0, 57, 230)',
+                        'rgb(255, 255, 0)',
+                        'rgb(77, 0, 153)',
+                        'rgb(255, 51, 0)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+
+        var myChart2 = new Chart("myChart-2", {
+            type: 'bar',
+            data: {
+                labels: ["October", "November", "December", "January", "February", "March"],
+                datasets: [{
+                    data: [12, 19, 5, 56, 20, 7],
+                    backgroundColor: [
+                        'rgb(255, 77, 255)',
+                        'rgb(0, 204, 0)',
+                        'rgb(0, 57, 230)',
+                        'rgb(255, 255, 0)',
+                        'rgb(77, 0, 153)',
+                        'rgb(255, 51, 0)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+
+        var myChart3 = new Chart("myChart-3", {
+            type: 'bar',
+            data: {
+                labels: ["October", "November", "December", "January", "February", "March"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 5, 56, 20, 7],
+                    backgroundColor: [
+                        'rgb(255, 77, 255)',
+                        'rgb(0, 204, 0)',
+                        'rgb(0, 57, 230)',
+                        'rgb(255, 255, 0)',
+                        'rgb(77, 0, 153)',
+                        'rgb(255, 51, 0)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+
+        var myChart4 = new Chart("myChart-4", {
+            type: 'bar',
+            data: {
+                labels: ["October", "November", "December", "January", "February", "March"],
+                datasets: [{
+                    data: [12, 19, 5, 56, 20, 7],
+                    backgroundColor: [
+                        'rgb(255, 77, 255)',
+                        'rgb(0, 204, 0)',
+                        'rgb(0, 57, 230)',
+                        'rgb(255, 255, 0)',
+                        'rgb(77, 0, 153)',
+                        'rgb(255, 51, 0)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+        // };
+
+        $("#placeholder1").show(500);
+        $("#placeholder2").show(500);
+        $("#placeholder3").show(500);
+        $("#placeholder4").show(500);
+    }
+
     function weather() {
+        $(".fullwidth").removeClass("canvas-margin")
+        $(".canvas1").hide(500);
+        $(".canvas2").hide(500);
+        $(".canvas3").hide(500);
+        $(".canvas4").hide(500);  
+
         window.setTimeout(function () {
             mic.attr("style", "margin-bottom: 0; margin-top: 100px");
 
@@ -288,13 +448,13 @@
                                 case "company":
                                 case "value":
                                 case "values":
-                                    playVideo(5);
+                                    //playVideo(5);
                                     window.setTimeout(function () {
                                         changeVideoAndPlay("ChoseValuesFinal.mp4");
                                     }, 500);
                                     company();
                                     
-                                    speak("The principles for Team work  was : Leadership, Shared resources The principles for Passion  are : Chase a dream, Reach high. The principles for Creativity  are : Create proper climate for creativity , Phrase problems as questions The principles for Result-oriented  are : Trust, Respect, Focus");
+                                    speak("Here are the sales of the company.");
                                     break;
                             }
                             noResults = false;

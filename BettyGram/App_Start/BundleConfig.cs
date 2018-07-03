@@ -22,10 +22,10 @@ namespace BettyGram
          bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                    "~/Scripts/bootstrap.js",
                    "~/Scripts/respond.js",
-                   "~/Scripts/utils.js",
-                   "~/Scripts/charts.js",
                    "~/Scripts/Speech2Text.js",
-                   "~/Scripts/weather.js"));
+                   "~/Scripts/weather.js", 
+                   "~/Scripts/charts.js",
+                   "~/Scripts/utils.js" ));
 
          bundles.Add(new StyleBundle("~/Content/css").Include(
                    "~/Content/bootstrap.css",

@@ -199,6 +199,7 @@
     <Content Include="Content\Video\ChoseWeatherFinal.mp4" />
     <Content Include="Content\Video\ColajEchipe.mp4" />
     <Content Include="Content\Video\hi_2.mp4" />
+    <Content Include="Content\Video\hologramExemple.mp4" />
     <Content Include="Content\Video\LogoWithSoundFinal.mp4" />
     <Content Include="Content\Video\test.mp4" />
     <Content Include="favicon.ico" />
@@ -218,6 +219,7 @@
     <Content Include="Content\Video\test.ogv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\charts.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />
@@ -234,6 +236,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Speech2Text.js" />
+    <Content Include="Scripts\utils.js" />
     <Content Include="Scripts\weather.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />

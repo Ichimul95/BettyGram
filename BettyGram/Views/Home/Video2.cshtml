@@ -1,22 +1,26 @@
-﻿<link href="~/Content/Video1.css" rel="stylesheet" />
+﻿@{ 
+   string guid = Guid.NewGuid().ToString("N");
+   string videoUrl = "/Content/Video/LogoWithSoundFinal.mp4?guid=" + @guid;
+}
+<link href="~/Content/Video1.css" rel="stylesheet" />
 
 <div class="fullwidth">
 
     <div id="row1">
-        <video width="400" height="200" id="video1" src="~/Content/Video/LogoWithSoundFinal.mp4"></video>
+        <video width="400" height="200" id="video1" src="@videoUrl"></video>
         <div style="width: 400px; height: 200px; display:none" id="placeholder1"></div>
     </div>
 
     <div id="row2">
-        <video width="400" height="200" id="video2" src="Content/mic.png"></video>
+        <video width="400" height="200" id="video2" src="@videoUrl"></video>
         <div style="width: 400px; height: 200px; display:none" id="placeholder2"></div>
         <img id="mic" src="/Content/mic.png" width="100" alt="mic"/>
-        <video width="400" height="200" id="video3" src="~/Content/Video/LogoWithSoundFinal.mp4"></video>
+        <video width="400" height="200" id="video3" src="@videoUrl"></video>
         <div style="width: 400px; height: 200px; display:none" id="placeholder3"></div>
     </div>
 
     <div id="row3">
-        <video width="400" height="200" id="video4" src="~/Content/Video/LogoWithSoundFinal.mp4"></video>
+        <video width="400" height="200" id="video4" src="@videoUrl"></video>
         <div style="width: 400px; height: 200px; display:none" id="placeholder4"></div>
     </div>
 

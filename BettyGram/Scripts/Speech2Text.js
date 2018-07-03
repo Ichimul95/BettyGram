@@ -67,7 +67,7 @@
 
     function demo() {
         window.setTimeout(function () {
-            changeVideoAndPlay("CalculationMovie.mp4");
+            changeVideoAndPlay("hologramExemple.mp4");
         }, 2500);
     }
 
@@ -84,10 +84,6 @@
     }
 
     function intro() {
-        $("#video1").attr("src", "/Content/Video/LogoWithSoundFinal.mp4");
-        $("#video2").attr("src", "/Content/Video/LogoWithSoundFinal.mp4");
-        $("#video3").attr("src", "/Content/Video/LogoWithSoundFinal.mp4");
-        $("#video4").attr("src", "/Content/Video/LogoWithSoundFinal.mp4");
         $("#video1").get(0).play();
         $("#video2").get(0).play();
         $("#video3").get(0).play();
@@ -188,7 +184,7 @@
 
     if ("webkitSpeechRecognition" in window) {
         recognition = new window.webkitSpeechRecognition();
-        var whiteList = ["home", "company", "values", "value", "weather", "calculation", "menu", "next", "demo", "photo", "photos", "options", "option", "culture", "presentation", "identity"];
+        var whiteList = ["home", "company", "values", "value", "weather", "hologram", "menu", "next", "demo", "photo", "photos", "options", "option", "culture", "presentation", "identity"];
         var grammar = "#JSGF V1.0; public <keyword> = home|company|values|value|weather|calculation|menu|demo|photo|photos|options|option|culture|presentation|identity;";
         var speechRecognitionList = new window.webkitSpeechGrammarList();
         speechRecognitionList.addFromString(grammar, 1);
@@ -267,9 +263,15 @@
                                     }, 500);
                                     weather();
                                     break;
-                                case "calculation":
+                                case "hologram":
+                                    playVideo(4);
+                                    window.setTimeout(function () {
+                                        changeVideoAndPlay("ChoseDemoFinal.mp4");
+                                    }, 500);
+                                    demo();
+                                    break;
                                 case "demo":
-                                    playVideo(0);
+                                    playVideo(4);
                                     window.setTimeout(function () {
                                         changeVideoAndPlay("ChoseDemoFinal.mp4");
                                     }, 500);

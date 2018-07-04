@@ -158,3 +158,23 @@ html {
 .video-3 {
     float: left;
 }
+.video-1.deg180 {
+    transform: rotateX(180deg)!important;
+}
+#video2 .deg90 {
+    transform: rotate(90deg) !important;
+}
+#video3 .deg-90 {
+    transform: rotate(-90deg) !important;
+}
+#video4 .deg0 {
+    transform: rotateX(0) !important;
+}
+
+#video2.deg-90 {
+    transform: rotate(-90deg) !important;
+}
+
+#video3.deg90 {
+    transform: rotate(90deg) !important;
+}

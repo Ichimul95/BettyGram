@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Web.Mvc;
-
+using BettyGram.BL;
 using BettyGram.Models;
 
 using Newtonsoft.Json;
@@ -18,6 +18,8 @@ namespace BettyGram.Controllers
 {
    public class HomeController : Controller
    {
+      private readonly ISalesManager _salesManager = new SalesManager();
+
       public ActionResult Index(string display = "text")
       {
          return View("Video2");
@@ -64,6 +66,13 @@ namespace BettyGram.Controllers
             }
          };
          return openWeatherMap;
+      }
+
+      public ActionResult GetSales()
+      {
+         //  SalesModel model = SalesModel.ToViewModel(_salesManager.GetAll());
+         SalesModel model = JsonConvert.DeserializeObject<SalesModel>(_salesManager.GetAll().ToString());
+         return Json(new { values = model }, JsonRequestBehavior.AllowGet);
       }
    }
 }

@@ -66,7 +66,7 @@
     }
 
     function demo() {
-        $(".fullwidth").removeClass("canvas-margin")
+        $(".fullwidth").removeClass("canvas-margin");
         $(".canvas1").hide(500);
         $(".canvas2").hide(500);
         $(".canvas3").hide(500);
@@ -78,7 +78,13 @@
     }
 
     function gallery() {
-        $(".fullwidth").removeClass("canvas-margin")
+        $(".fullwidth").removeClass("canvas-margin");
+
+        $("#video1").removeClass("deg180");
+        $("#video2").removeClass("-deg90");
+        $("#video3").removeClass("deg90");
+        $("#video4").removeClass("deg0");
+
         $(".canvas1").hide(500);
         $(".canvas2").hide(500);
         $(".canvas3").hide(500);
@@ -92,7 +98,13 @@
 
 
     function intro() {
-        $(".fullwidth").removeClass("canvas-margin")
+        $(".fullwidth").removeClass("canvas-margin");
+
+        $("#video1").removeClass("deg180");
+        $("#video2").removeClass("-deg90");
+        $("#video3").removeClass("deg90");
+        $("#video4").removeClass("deg0");
+
         $(".canvas1").hide(500);
         $(".canvas2").hide(500);
         $(".canvas3").hide(500);
@@ -105,7 +117,13 @@
     }
 
     function menu() {
-        $(".fullwidth").removeClass("canvas-margin")
+        $(".fullwidth").removeClass("canvas-margin");
+
+        $("#video1").removeClass("deg180");
+        $("#video2").removeClass("-deg90");
+        $("#video3").removeClass("deg90");
+        $("#video4").removeClass("deg0");
+
         $(".canvas1").hide(500);
         $(".canvas2").hide(500);
         $(".canvas3").hide(500);
@@ -139,6 +157,12 @@
 
     function presentation() {
         $(".fullwidth").removeClass("canvas-margin")
+
+        $("#video1").addClass("deg180");
+        $("#video2").addClass("deg-90");
+        $("#video3").addClass("deg90");
+        $("#video4").addClass("deg0");
+
         $("#video1").attr("src", "/Content/Video/hi_2.mp4");
         $("#video2").attr("src", "/Content/Video/hi_2.mp4");
         $("#video3").attr("src", "/Content/Video/hi_2.mp4");
@@ -164,11 +188,18 @@
         $("#video3").get(0).play();
         $("#video4").get(0).play();
 
-        speak( "Nice to meet you. Here is what I can do for you: I can tell you the weather, nice images from Stabiplan, tell you the company values and even make a calculation in Stabicad" );
+        speak("Nice to meet you. Here is what I can do for you: I can tell you the meteorological conditions, nice images from Stabiplan, tell you the corporation sales and even talk about myself");
+
     }
 
     function company() {
         $(".weather").hide();
+
+        $("#video1").removeClass("deg180");
+        $("#video2").removeClass("-deg90");
+        $("#video3").removeClass("deg90");
+        $("#video4").removeClass("deg0");
+
         $(".fullwidth").addClass("canvas-margin")
         $(".canvas1").show(500);
         $(".canvas2").show(500);
@@ -187,7 +218,7 @@
         var myChart1 = new Chart("myChart-1", {
             type: 'bar',
             data: {
-                labels: ["October", "November", "December", "January", "February", "March"],
+                labels: ["Russia", "Germany", "France", "Holland", "Italy", "USA"],
                 datasets: [{
                     data: [12, 19, 5, 56, 20, 7],
                     backgroundColor: [
@@ -214,7 +245,7 @@
         var myChart2 = new Chart("myChart-2", {
             type: 'bar',
             data: {
-                labels: ["October", "November", "December", "January", "February", "March"],
+                labels: ["Russia", "Germany", "France", "Holland", "Italy", "USA"],
                 datasets: [{
                     data: [12, 19, 5, 56, 20, 7],
                     backgroundColor: [
@@ -241,7 +272,7 @@
         var myChart3 = new Chart("myChart-3", {
             type: 'bar',
             data: {
-                labels: ["October", "November", "December", "January", "February", "March"],
+                labels: ["Russia", "Germany", "France", "Holland", "Italy", "USA"],
                 datasets: [{
                     label: '# of Votes',
                     data: [12, 19, 5, 56, 20, 7],
@@ -269,7 +300,7 @@
         var myChart4 = new Chart("myChart-4", {
             type: 'bar',
             data: {
-                labels: ["October", "November", "December", "January", "February", "March"],
+                labels: ["Russia", "Germany", "France", "Holland", "Italy", "USA"],
                 datasets: [{
                     data: [12, 19, 5, 56, 20, 7],
                     backgroundColor: [
@@ -301,7 +332,12 @@
     }
 
     function weather() {
-        $(".fullwidth").removeClass("canvas-margin")
+        $(".fullwidth").removeClass("canvas-margin");
+        $("#video1").removeClass("deg180");
+        $("#video2").removeClass("-deg90");
+        $("#video3").removeClass("deg90");
+        $("#video4").removeClass("deg0");
+
         $(".canvas1").hide(500);
         $(".canvas2").hide(500);
         $(".canvas3").hide(500);
@@ -398,7 +434,7 @@
                     for (var wordInx = 0; wordInx < whiteList.length; wordInx++) {
                         var option = whiteList[wordInx];
                         if (keyword.indexOf(option) !== -1) {
-                            var message = "Let's see the " + option;
+                            var message = "Let's see your choice";
                             if (option === "menu") {
                                 message = "Ofcourse";
                             }
@@ -412,8 +448,6 @@
                                     presentation();
                                     break;
                                 case "menu":
-                                case "option":
-                                case "options":
                                     menu();
                                     break;
                                 case "weather":
@@ -454,7 +488,7 @@
                                     }, 500);
                                     company();
                                     
-                                    speak("Here are the sales of the company.");
+                                    speak("Here are the sales of the corporation in the following countries:Russia, Germany, France, Holland, Italy, USA.");
                                     break;
                             }
                             noResults = false;
